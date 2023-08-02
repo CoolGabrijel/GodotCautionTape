@@ -1,0 +1,128 @@
+[gd_scene load_steps=6 format=3 uid="uid://bw67lig5suaq"]
+
+[ext_resource type="Shader" uid="uid://c0on18f2mstre" path="res://addons/caution-tape-shader/WarningTapeShader.tres" id="1_5ldpe"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5p124"]
+shader = ExtResource("1_5ldpe")
+shader_parameter/Color = Color(1, 1, 0, 1)
+shader_parameter/LineAmount = 50
+shader_parameter/LineWidth = 1.0
+shader_parameter/UseScreenUV = true
+shader_parameter/AnimationDirection = Vector2(-0.01, 0)
+shader_parameter/Rotation = 45.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0tksp"]
+shader = ExtResource("1_5ldpe")
+shader_parameter/Color = Color(1, 0, 0, 1)
+shader_parameter/LineAmount = 25
+shader_parameter/LineWidth = 1.0
+shader_parameter/UseScreenUV = true
+shader_parameter/AnimationDirection = Vector2(0, 0)
+shader_parameter/Rotation = 45.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vouvj"]
+shader = ExtResource("1_5ldpe")
+shader_parameter/Color = Color(1, 1, 0, 1)
+shader_parameter/LineAmount = 50
+shader_parameter/LineWidth = 1.0
+shader_parameter/UseScreenUV = true
+shader_parameter/AnimationDirection = Vector2(0.01, 0)
+shader_parameter/Rotation = 45.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_fkvib"]
+font_size = 50
+font_color = Color(1, 1, 0, 1)
+
+[node name="Thumbnail" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TopBand" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_5p124")
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.05
+anchor_right = 1.0
+anchor_bottom = 0.1
+grow_horizontal = 2
+
+[node name="MiddleTop" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0tksp")
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.35
+anchor_right = 1.0
+anchor_bottom = 0.425
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MiddleLeft" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0tksp")
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.425
+anchor_right = 0.25
+anchor_bottom = 0.575
+grow_vertical = 2
+
+[node name="MiddleRight" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0tksp")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.425
+anchor_right = 1.0
+anchor_bottom = 0.575
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MiddleBottom" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_0tksp")
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.575
+anchor_right = 1.0
+anchor_bottom = 0.65
+grow_vertical = 2
+
+[node name="BottomBand" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_vouvj")
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.9
+anchor_right = 1.0
+anchor_bottom = 0.95
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CAUTION"
+label_settings = SubResource("LabelSettings_fkvib")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1690908595
+icon.svg::CompressedTexture2D::3519348445236800332::1690633059::1690633079::1::::<><>::
+thumbnail.tscn::PackedScene::117545116836784656::1690637334::0::1::::<><>::uid://c0on18f2mstre::::res://addons/caution-tape-shader/WarningTapeShader.tres
+::res://addons/::1690633739
+::res://addons/caution-tape-shader/::1690635090
+caution-tape-shader.gd::GDScript::-1::1690633776::0::1::::<>EditorPlugin<>::
+plugin.cfg::TextFile::-1::1690633819::0::1::::<><>::
+WarningTapeShader.tres::VisualShader::6557301240679439234::1690635090::0::1::::<><>::
+::res://addons/caution-tape-shader/example/::1690637334
+example.tscn::PackedScene::2597954943830182026::1690637334::0::1::::<><>::uid://c0on18f2mstre::::res://addons/caution-tape-shader/WarningTapeShader.tres
