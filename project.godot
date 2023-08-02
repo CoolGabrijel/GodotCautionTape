@@ -13,10 +13,10 @@ config_version=5
 config/name="GodotCautionTape"
 run/main_scene="res://thumbnail.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://icon.png"
 
 [display]
 
-window/size/viewport_width=630
-window/size/viewport_height=500
+window/size/viewport_width=512
+window/size/viewport_height=512
 window/size/resizable=false
